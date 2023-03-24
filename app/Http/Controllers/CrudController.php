@@ -16,8 +16,8 @@ class CrudController extends Controller
         $image = $request->image->getClientOriginalName();
         $image_size = $request->image->getSize();
         $request->image->storeAs('public/uploads/', $image);
-        echo $image;
-        echo $image_size;
+//        echo $image;
+//        echo $image_size;
         $image_save->title=$request->title;
         $image_save->name=$image;
 
